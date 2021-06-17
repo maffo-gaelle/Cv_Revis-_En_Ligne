@@ -9,8 +9,6 @@ $(document).ready(function() {
     var navbar = document.querySelector('.navbar__link');
     var link = document.querySelectorAll('#hambuger-sidebar-body li.navbar__link');
 
-    // var chart = document.querySelector('#competence');
-
     sidebarBody.innerHTML = content.innerHTML;
     var link = document.querySelectorAll('#hambuger-sidebar-body li.navbar__link');
     console.log(link);
@@ -44,8 +42,6 @@ $(document).ready(function() {
     if(link) {
         for(let i = 0; i < link.length; i++) {
             link[i].addEventListener('click', (e) => {
-                e.preventDefault();
-                console.log("click item");
                 overlay.style.display = 'none';
                 sidebar.style.transform = 'translateX(-100%)';
                 nav.classList.toggle('show-nav');
@@ -53,14 +49,23 @@ $(document).ready(function() {
         }
     }
 
+    //scroll dans la fenetre
+    $("#more-infos a, .navbar__link a, footer #btn-less").on("click", function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+
+        $('body,html').animate({scrollTop: $(hash).offset().top}, 1000, function() {
+            window.location.hash = hash;
+        });
+    })
     // Chart
 
     var ctx = document.getElementById('myChart');
     var data = {
-            labels: ['Java', 'Typescript', 'Css/CSS3', 'PHP', 'Angular', 'SQL Server', 'Javascript', 'JQuery', '.NET', 'C#', 'HTML'],
+            labels: ['Java', 'Typescript', 'Css/CSS3', 'PHP', 'Angular', 'SQL Server', 'Javascript', 'JQuery', 'WPF', '.NET','ASP MVC', 'C#', 'HTML'],
             datasets: [{
-                label: '% de competences',
-                data: [40, 60, 65, 70, 75, 80, 85, 85, 90, 92, 95],
+                label: '% de competence',
+                data: [40, 60, 65, 70, 75, 80, 85, 85, 87, 90, 90, 92, 95],
                 backgroundColor: [
                     'rgba(131, 101, 73, 0.5)',
                     'rgba(135, 102, 71, 0.5)',
@@ -69,6 +74,8 @@ $(document).ready(function() {
                     'rgba(178, 111, 48, 0.5)',
                     'rgba(190, 113, 40, 0.5)',
                     'rgba(189, 115, 44, 0.5)',
+                    'rgba(228, 135, 47, 0.5)',
+                    'rgba(228, 135, 47, 0.5)',
                     'rgba(228, 135, 47, 0.5)',
                     'rgba(228, 135, 47, 0.5)',
                     'rgba(228, 126, 30, 0.5)',
@@ -84,6 +91,8 @@ $(document).ready(function() {
                     'rgba(189, 115, 44, 1)',
                     'rgba(228, 135, 47, 1)',
                     'rgba(228, 135, 47, 1)',
+                    'rgba(228, 135, 47, 1)',
+                    'rgba(228, 135, 47, 1)',
                     'rgba(228, 126, 30, 1)',
                     'rgba(242, 122, 10, 1)'
                 ],
@@ -96,6 +105,8 @@ $(document).ready(function() {
                     'rgba(178, 111, 48, 1)',
                     'rgba(190, 113, 40, 1)',
                     'rgba(189, 115, 44, 1)',
+                    'rgba(228, 135, 47, 1)',
+                    'rgba(228, 135, 47, 1)',
                     'rgba(228, 135, 47, 1)',
                     'rgba(228, 135, 47, 1)',
                     'rgba(228, 126, 30, 1)',
@@ -125,6 +136,36 @@ $(document).ready(function() {
         Chart.Bar('chart', {
             options: options,
             data: data
+        });
+
+        //Formulaire ajax
+        $('#contact-form').submit(function(e) {
+            e.preventDefault();
+            $('.comments').empty();
+            var postdata = $('#contact-form').serialize();
+            
+            $.ajax({
+                type: 'POST',
+                url: 'php/contact.php',
+                data: postdata,
+                dataType: 'json',
+                success: function(json) {
+                     
+                    if(json.isSuccess) 
+                    {
+                        $('#contact-form').append("<p class='thank-you'>Votre message a bien été envoyé. Merci de m'avoir contacté :)</p>");
+                        $('#contact-form')[0].reset();
+                    }
+                    else
+                    {
+                        $('#firstname + .comments').html(json.firstnameError);
+                        $('#name + .comments').html(json.nameError);
+                        $('#email + .comments').html(json.emailError);
+                        $('#phone + .comments').html(json.phoneError);
+                        $('#message + .comments').html(json.messageError);
+                    }                
+                }
+            });
         });
 });
 

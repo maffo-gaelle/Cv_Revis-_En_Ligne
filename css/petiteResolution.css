@@ -4,6 +4,21 @@ h1 {
     line-height: 56px;
 }
 
+/* About */
+
+#more-infos div {
+    margin-top: 50%;
+    margin-right: 2px;
+}
+
+#more-infos div h1 {
+    text-align: left;
+}
+
+#more-infos div .pulse {
+    margin-left: 50%;
+}
+
 /* barre de navigation */
 
 .show-nav .bar {
@@ -174,6 +189,12 @@ h1 {
 
 .timeline {
     display: none;
+}
+
+/* competences */
+
+.chart-container {
+    width: 70vw;
 }
 
 /* Projets */

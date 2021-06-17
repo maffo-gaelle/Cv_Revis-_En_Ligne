@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/icon.PNG" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     
-    <link rel="stylesheet" media="screen and (max-width: 810px)" href="../css/petiteResolution.css" />
+    <link rel="stylesheet" media="screen and (max-width: 810px)" href="css/petiteResolution.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -48,24 +48,24 @@
     <section id="more-infos">
             <div>
                 <h1>Aurélie </h1>
-            <h3 style="padding-top: 10px;">Développeuse web fullstack</h3>
-            <h5><a href="#about">En savoir plus <i class="btn-up material-icons" style="font-size: 30px;">expand_more</i></a></h5>
+            <h5>Développeuse .NET</h5>
+            <h5 class="pulse"><a href="#about" ><i class="btn-up material-icons" style="font-size: 30px;">expand_more</i></a></h5>
             </div>
     </section>
     <section id="about">
         <div class="profile-picture">
-            <img class="rounded-circle" src="../images/moi.jpeg" alt="photo-profile" width="190px">
+            <img class="rounded-circle" src="images/moi.jpeg" alt="photo-profile" width="190px">
             <div>
-                étant passionnée par le web, il y'a trois ans, j'ai décidé de me reconvertir et d'en faire mon metier. <br>En fin de cursus en Informatique de gestion, j'ai suivie plusieurs autres formations.<br> Ma forte motivation et ma capacité d'adaptation m'ont donné une certaine expérience dans divers languages de programmation principalement C#, .NET, Javascript, Angular...
+                <span>é</span>tant passionnée par le web, il y'a trois ans, je décide de me reconvertir dans le développement web.<br><span>é</span>tant actuellement en fin de cursus pour l'obtention d'un bachelier en Informatique de gestion, j'ai suivi plusieurs autres formations.<br> Ma forte motivation et ma capacité d'adaptation m'ont donnée une certaine expérience dans divers langages de programmation principalement C#, .NET, Javascript, Angular...
             </div>
             <div>
-                <button id="small-button">Télécharger mon cv ici</button>
+                <a type="button" href="Docs/cv.pdf" id="small-button" _target="_blank">Télécharger mon cv ici</a>
             </div>
         </div>
         <div id="about-content">
             <div class="wrapper">
                 <div class="link_wrapper">
-                    <a href="docs/CV_MaffoMelagui.pdf" class="button1" target="_blank"> Télécharger CV</a>
+                    <a href="Docs/cv.pdf" class="button1" target="_blank"> Télécharger CV</a>
                     <div class="icon" >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
                         <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
@@ -92,13 +92,13 @@
             <li>
                 <div class="timeline-badge"><span class="material-icons">folder</span></div>
                 <div class="timeline-panel-container" >
-                    <div class="timeline-panel">
+                    <div class="timeline-panel" data-aos="flip-right" data-aos-duration="2000">
                         <div class="timeline-heading">
                             <h3>Projet similaire à Trello:</h3>
                         </div>
                         <div class="timeline-body">
                             <div>
-                                <p>Utilisation de l'ASP.NET Core en backend, TypeScript, Angular 10, Angular Material en frontend avec une api rest et un style css basé sur le préprocessesseur sass</p>
+                                <p>Le but de l'application est de mettre en place un outil de gestion de projet en ligne.<br><span><span>Technologies utilisées:</span> Angular, Angular Material, SAAS, ASP.NET Core, EF Core, MySQL, LinQ, API REST</span></p>
                                 <p><a href="https://github.com/maffo-gaelle/trello" class="link" target="_blank">Lien vers le repo github</a></p>
                             </div>
                         </div>
@@ -108,14 +108,15 @@
             <li>
                 <div class="timeline-badge"><span class="material-icons">folder</span></span></div>
                 <div class="timeline-panel-container-inverted">
-                    <div class="timeline-panel">
+                    <div class="timeline-panel" data-aos="flip-left" data-aos-duration="2000">
                         <div class="timeline-heading">
-                            <h3>Projet similaire à Trello:</h3>
+                            <h3>Application similaire à Stack-Overflow:</h3>
                         </div>
                         <div class="timeline-body">
                             <div>
-                                <p>Utilisation de l'ASP.NET Core en backend, TypeScript, Angular 10, Angular Material en frontend avec une api rest et un style css basé sur le préprocessesseur sass</p>
-                                <p><a href="https://github.com/maffo-gaelle/trello" class="link" target="_blank">Lien vers le repo github</a></p>
+                                <p>Stack Overflow est un site web proposant des questions et réponses sur un large choix de thèmes concernant la programmation informatique. <br>
+                                    <span>Technologies utilisées: </span><span>PHP, Javascrit, Jquery, Ajax, HTML, CSS, Bootstrap, MySQL, architecture MVC; </span></p>
+                                <p><a href="https://github.com/maffo-gaelle/stack-overflow" class="link" target="_blank">Lien vers le repo github</a></p>
                             </div>
                         </div>
                     </div>
@@ -124,14 +125,15 @@
             <li>
                 <div class="timeline-badge"><span class="material-icons">folder</span></span></div>
                 <div class="timeline-panel-container">
-                    <div class="timeline-panel">
+                    <div class="timeline-panel" data-aos="flip-left" data-aos-duration="2000">
                         <div class="timeline-heading">
-                            <h3>Projet similaire à Trello:</h3>
+                            <h3>Projet similaire à Stack-Overflow:</h3>
                         </div>
                         <div class="timeline-body">
                             <div>
-                                <p>Utilisation de l'ASP.NET Core en backend, TypeScript, Angular 10, Angular Material en frontend avec une api rest et un style css basé sur le pré-processeur sass</p>
-                                <p><a href="https://github.com/maffo-gaelle/trello" class="link" target="_blank">Lien vers le repo github</a></p>
+                                <p>Stack Overflow est un site web proposant des questions et réponses sur un large choix de thèmes concernant la programmation informatique. <br>
+                                    <span>Technologies utilisées: </span><span>C#, EF, LINQ, WPF, architecture MVVM</span></p>
+                                    <p><a href="https://github.com/maffo-gaelle/stuck-overflow" class="link" target="_blank">Lien vers le repo github</a></p>
                             </div>
                         </div>
                     </div>
@@ -140,14 +142,14 @@
             <li>
                 <div class="timeline-badge"><span class="material-icons">folder</span></span></div>
                 <div class="timeline-panel-container-inverted">
-                    <div class="timeline-panel">
+                    <div class="timeline-panel" data-aos="flip-left" data-aos-duration="2000">
                         <div class="timeline-heading">
-                            <h3>Projet similaire à Trello:</h3>
+                            <h3>Application similaire à Moodle:</h3>
                         </div>
                         <div class="timeline-body">
                             <div>
-                                <p>Utilisation de l'ASP.NET Core en backend, TypeScript, Angular 10, Angular Material en frontend avec une api rest et un style css basé sur le préprocessesseur sass</p>
-                                <p><a href="https://github.com/maffo-gaelle/trello" class="link" target="_blank">Lien vers le repo github</a></p>
+                                <p>Il s'agit d'une version simplifiée de la plateforme de d'étude Moodle, où sont connectés professeur et étudiants(en cours)</p>
+                                <p>C#, EF, LINQ, WPF, architecture MVVM</p>
                             </div>
                         </div>
                     </div>
@@ -159,8 +161,8 @@
                 <li>
                     <div>
                         <div >
-                        <h3 >Projet similaire à Trello:</h3>
-                        <p>Utilisation de l'ASP.NET Core en backend, TypeScript, Angular 10, Angular Material en frontend avec une api rest et un style css basé sur le pré-processeur sass</p>
+                        <h3 >Application similaire à Trello:</h3>
+                        <p>Le but de l'application est de mettre en place un outil de gestion de projet en ligne.<br><span><span>Technologies utilisées:</span> Angular, Angular Material, SAAS, ASP.NET Core, EF Core, MySQL, LinQ, API REST</span></p>
                         <p><a href="https://github.com/maffo-gaelle/trello" class="link" target="_blank">Lien vers le repo github</a></p>
                         </div>
                     </div>
@@ -168,27 +170,29 @@
                 <li>
                     <div>
                         <div >
-                        <h3 >Projet similaire à Trello:</h3>
-                        <p>Utilisation de l'ASP.NET Core en backend, TypeScript, Angular 10, Angular Material en frontend avec une api rest et un style css basé sur le pré-processeur sass</p>
-                        <p><a href="https://github.com/maffo-gaelle/trello" class="link" target="_blank">Lien vers le repo github</a></p>
+                        <h3 >Application similaire à Stack-Overflow:</h3>
+                        <p>Stack Overflow est un site web proposant des questions et réponses sur un large choix de thèmes concernant la programmation informatique. <br>
+                            <span>Technologies utilisées: </span><span>PHP, Javascrit, Jquery, Ajax, HTML, CSS, Bootstrap, MySQL, architecture MVC; </span></p>
+                        <p><a href="https://github.com/maffo-gaelle/stack-overflow" class="link" target="_blank">Lien vers le repo github</a></p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div>
                         <div >
-                        <h3 >Projet similaire à Trello:</h3>
-                        <p>Utilisation de l'ASP.NET Core en backend, TypeScript, Angular 10, Angular Material en frontend avec une api rest et un style css basé sur le pré-processeur sass</p>
-                        <p><a href="https://github.com/maffo-gaelle/trello" class="link" target="_blank">Lien vers le repo github</a></p>
+                        <h3 >Application similaire à Stack-Overflow:</h3>
+                        <p>Stack Overflow est un site web proposant des questions et réponses sur un large choix de thèmes concernant la programmation informatique. <br>
+                            <span>Technologies utilisées: </span><span>C#, EF, LINQ, WPF, architecture MVVM</span></p>
+                            <p><a href="https://github.com/maffo-gaelle/stuck-overflow" class="link" target="_blank">Lien vers le repo github</a></p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div>
                         <div >
-                        <h3 >Projet similaire à Trello:</h3>
-                        <p>Utilisation de l'ASP.NET Core en backend, TypeScript, Angular 10, Angular Material en frontend avec une api rest et un style css basé sur le pré-processeur sass</p>
-                        <p><a href="https://github.com/maffo-gaelle/trello" class="link" target="_blank">Lien vers le repo github</a></p>
+                        <h3 >Application similaire à Moodle:</h3>
+                        <<p>Il s'agit d'une version simplifiée de la plateforme d'étude Moodle, où sont connectés professeurs et étudiants(en cours)</p>
+                        <p>C#, EF, LINQ, WPF, architecture MVVM</p>
                         </div>
                     </div>
                 </li>
@@ -202,7 +206,7 @@
             <div>
                 <div class="education-block" >
                     <p> Février 2019 ...</p>
-                    <p>EPFC</p>
+                    <p id="epfc">EPFC</p>
                     <p>Bachelier en Informatique de gestion</p>
                 </div>
             </div>
@@ -215,6 +219,13 @@
             </div>
             <div>
                 <div class="education-block">
+                    <p>Janvier 2021(3 semaines)</p>
+                    <p>Bruxelles Formation</p>
+                    <p>Les fondamentaux d'ASP.NET Core</p>
+                </div>
+            </div>
+            <div>
+                <div class="education-block">
                     <p>Novembre 2020(6 semaines)</p>
                     <p>Bruxelles Formation</p>
                     <p>Les fondamentaux de HTML et CSS</p>
@@ -222,7 +233,7 @@
             </div>
             <div>
                 <div class="education-block">
-                    <p>Fevrier 2020(6 semaines)</p>
+                    <p>Fevrier 2021(6 semaines)</p>
                     <p>Bruxelles Formation</p>
                     <p>Les fondamentaux de Bootstrap</p>
                 </div>
@@ -233,18 +244,18 @@
         <div class="white-divider"></div>
         <h2>Formulaire de contact</h2>
         <div>
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" id="contact-form" role="form">
+            <form action="" method="post" id="contact-form" role="form">
 
                 <div class="flex">
                     <div>
                         <label for="firstname">Prénom<sup>*</sup></label>
                         <input type="text" name="firstname" id="firstname" class="form-control" placeholder="Votre prénom" value="">
-                        <p class="comment"></p>
+                        <p class="comments"></p>
                     </div>
                     <div>
                         <label for="name">Nom<sup>*</sup></label>
                         <input type="text" name="name" id="name" class="form-control" placeholder="Votre nom" value="">
-                        <p class="comment"></p>
+                        <p class="comments"></p>
                     </div>
                 </div>
 
@@ -252,12 +263,12 @@
                     <div>
                         <label for="email">Email<sup>*</sup></label>
                         <input type="email" name="email" id="email" class="form-control" placeholder="Votre email" value="">
-                        <p class="comment"></p>
+                        <p class="comments"></p>
                     </div>
                     <div>
                         <label for="phone">Telephone</label>
                         <input type="tel" name="phone" id="phone" class="form-control" placeholder="Votre téléphone">
-                        <p class="comment"></p>
+                        <p class="comments"></p>
                     </div>
                </div>
 
@@ -265,7 +276,7 @@
                     <div>
                         <label for="message">Message<sup>*</sup></label>
                         <textarea name="message" id="message" rows="4" class="form-contr0l" placeholder="Votre message" ></textarea>
-                        <p class="comment"></p>
+                        <p class="comments"></p>
                     </div>
                 </div>
 
@@ -274,22 +285,23 @@
                         <p class="blue"><strong>*Ces informations sont requises</strong></p>
                     </div>
                 </div>
-
+                <p class= "thank-you" style="display:none;">Votre message a bien été envoyé. Merci de m'avoir contactée :)</p>
                 <div class="containerSubmit">
                     <div>
                         <input type="submit" class="button1" id="button" value="Envoyer">
                     </div>
                 </div>
-                <p class= "thank-you" style="display:none;">Votre message a bien été envoyé. Merci de m'avoir contactée :)</p>
             </form>
         </div>
     </section>
     <footer class="text-center">
-        <a href="#about">
-            
+        <a href="#about" id="btn-less">
             <i class="btn-up material-icons" style="font-size: 30px;">expand_less</i>
         </a>
-        <h5>&copy; 2021 Maffo Aurelie <a href="https://github.com/maffo-gaelle" target="_blank"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/aurelie-gaelle-maffo-melagui-57b9371b5" target="_blank"><i class="fa fa-linkedin-square"></i></a><a href="mailto:gaellemaffo@yahoo.fr"><i class="fa fa-envelope-o"></i></a></h5>
+        <h5>&copy; 2021 Maffo Aurelie <a href="https://github.com/maffo-gaelle" target="_blank"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/gaelle-maffo/" target="_blank"><i class="fa fa-linkedin-square"></i></a><a href="mailto:gaellemaffo@yahoo.fr"><i class="fa fa-envelope-o"></i></a></h5>
     </footer> 
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
