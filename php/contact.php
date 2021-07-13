@@ -15,7 +15,7 @@
         
         if (empty($array["firstname"]))
         {
-            $array["firstnameError"] = "Je veux connaitre ton prénom !";
+            $array["firstnameError"] = "Your firstame !";
             $array["isSuccess"] = false; 
         } 
         else
@@ -25,7 +25,7 @@
 
         if (empty($array["name"]))
         {
-            $array["nameError"] = "Et oui je veux tout savoir. Même ton nom !";
+            $array["nameError"] = "Your lastname is required!";
             $array["isSuccess"] = false; 
         } 
         else
@@ -35,7 +35,7 @@
 
         if(!isEmail($array["email"])) 
         {
-            $array["emailError"] = "T'essaies de me rouler ? C'est pas un email ça  !";
+            $array["emailError"] = "A valid email please !";
             $array["isSuccess"] = false; 
         } 
         else
@@ -45,7 +45,7 @@
 
         if (!isPhone($array["phone"]))
         {
-            $array["phoneError"] = "Que des chiffres et des espaces, stp...";
+            $array["phoneError"] = "The phone is wrong ...";
             $array["isSuccess"] = false; 
         }
         else
@@ -55,7 +55,7 @@
 
         if (empty($array["message"]))
         {
-            $array["messageError"] = "Qu'est-ce que tu veux me dire ?";
+            $array["messageError"] = "A message is required!";
             $array["isSuccess"] = false; 
         }
         else

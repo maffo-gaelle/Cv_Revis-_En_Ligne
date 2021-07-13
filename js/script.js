@@ -22,6 +22,7 @@ $(document).ready(function() {
         navbar.classList.toggle('show-nav');
     });
 
+
     button.addEventListener('keydown', function(e) {
         if(overlay.style.display === 'block') {
             if(e.repeat === false && e.which === 27) {
@@ -115,15 +116,19 @@ $(document).ready(function() {
             }]
         };
         var options = {
-            
+           
+            // tooltips: { 
+            //     tooltips
+            // },
             maintainAspectRatio: false,
             scales: {
                 yAxes: [{
                   stacked: true,
                   gridLines: {
-                    display: true,
+                    display: false,
                     color: "rgba(255,99,132,0.2)"
                   }
+                  
                 }],
                 xAxes: [{
                   gridLines: {
@@ -138,34 +143,61 @@ $(document).ready(function() {
             data: data
         });
 
+
+        $('input, textarea').click(function(e) {
+            $('.thank-you').css("display", "none");
+        })
+
         //Formulaire ajax
         $('#contact-form').submit(function(e) {
+            console.log("ok");
             e.preventDefault();
             $('.comments').empty();
             var postdata = $('#contact-form').serialize();
-            
+            console.log(postdata);
             $.ajax({
                 type: 'POST',
                 url: 'php/contact.php',
                 data: postdata,
                 dataType: 'json',
                 success: function(json) {
-                     
+                    console.log("json");
                     if(json.isSuccess) 
                     {
-                        $('#contact-form').append("<p class='thank-you'>Votre message a bien été envoyé. Merci de m'avoir contacté :)</p>");
+                        $('.thank-you').css("display", "block");
                         $('#contact-form')[0].reset();
                     }
                     else
                     {
-                        $('#firstname + .comments').html(json.firstnameError);
-                        $('#name + .comments').html(json.nameError);
-                        $('#email + .comments').html(json.emailError);
-                        $('#phone + .comments').html(json.phoneError);
-                        $('#message + .comments').html(json.messageError);
+                        $('.commentFirstname').text(json.firstnameError);
+                        $('.commentName').text(json.nameError);
+                        $('.commentEmail').text(json.emailError);
+                        $('.commentTel').text(json.phoneError);
+                        $('.commentMessage').text(json.messageError);
+                        // $('#firstname + .comments').html(json.firstnameError);
+                        // $('#name + .comments').html(json.nameError);
+                        // $('#email + .comments').html(json.emailError);
+                        // $('#phone + .comments').html(json.phoneError);
+                        // $('#message + .comments').html(json.messageError);
+                        console.log(json.messageError)
                     }                
                 }
             });
+            // .done(function(response){
+            //     let data = JSON.stringify(response);
+            //     $("div#res").append(data);
+            // })
+        
+            // //Ce code sera exécuté en cas d'échec - L'erreur est passée à fail()
+            // //On peut afficher les informations relatives à la requête et à l'erreur
+            // .fail(function(error){
+            //     alert("La requête s'est terminée en échec. Infos : " + JSON.stringify(error));
+            // })
+        
+            // //Ce code sera exécuté que la requête soit un succès ou un échec
+            // .always(function(){
+            //     alert("Requête effectuée");
+            // });
         });
 });
 
