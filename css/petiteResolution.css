@@ -6,6 +6,9 @@ h1 {
 
 /* About */
 
+/* #more-infos {
+    clip-path: polygon(0 1%, 100% 20%, 100% 100%, 0 81%);
+}
 #more-infos div {
     margin-top: 50%;
     margin-right: 2px;
@@ -17,11 +20,11 @@ h1 {
 
 #more-infos div .pulse {
     margin-left: 50%;
-}
+} */
 
 /* barre de navigation */
 
-.show-nav .bar {
+ .show-nav .bar {
     width: 0;
     background: transparent;
 }
@@ -29,7 +32,7 @@ h1 {
     display: block;
     width: 45px;
     height: 4px;
-    background-color:  rgba(223,101,30,1);
+    background-color: #f1f1f1;
     border-radius: 3px;
     transition: all .5s ease-in-out;
     position: absolute;
@@ -43,7 +46,7 @@ h1 {
     display: block;
     width: 45px;
     height: 4px;
-    background-color:  rgba(223,101,30,1);
+    background-color:  #f1f1f1;
     border-radius: 3px;
     transition: all .5s ease-in-out;
     right: 0 !important;
@@ -83,10 +86,10 @@ h1 {
     position: fixed;
     width: 64%;
     z-index: 20;
-    height: 85%;
+    height: 100%;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
     transform: translateX(-100%);
     transition: .7s ease-out;
 }
@@ -129,14 +132,14 @@ h1 {
     display: none;
 } 
 
-/*  */
+/*  
 
 span#maffo{
     display: none;
 }
  
 
-/* about */
+/* about 
 #about {
     display: flex;
     flex-direction: column;
@@ -194,7 +197,7 @@ span#maffo{
     display: none;
 }
 
-/* competences */
+/* competences 
 
 .chart-container {
     width: 70vw;
@@ -208,7 +211,7 @@ span#maffo{
     display: none;
 }
 
-/* Projets */
+/* Projets 
 .projetMin {
     display: block;
     width: auto;
@@ -244,7 +247,7 @@ span#maffo{
     padding: 15px;
     flex-direction: column;
     
-}
+}*/
 
 /* Formulaire de contact */
 
@@ -257,13 +260,9 @@ span#maffo{
     display: none;
 }
 
-.chart-container h2 {
-    display: none;
-}
-
 
  .thank-you {
     font-size: 16px;
  }
 
-
+ 

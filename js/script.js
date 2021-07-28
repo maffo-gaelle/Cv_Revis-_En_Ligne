@@ -199,6 +199,68 @@ $(document).ready(function() {
             //     alert("Requête effectuée");
             // });
         });
+
+    //animation écriture
+    const txtAnim1 = document.querySelector('.txt-animation2');
+    let typewriter = new Typewriter(txtAnim1, {
+        loop: true,
+        deleteSpeed: 30
+    });
+
+    typewriter
+    .pauseFor(1800)
+    .deleteChars(12)
+    .typeString("<strong style='color : #601508!important'> Developer Full-stack !</strong>")
+    .pauseFor(2000)
+    .deleteChars(12)
+    .typeString("<strong style='color : #601508'> .NET !</strong>")
+    .pauseFor(2000)
+    .deleteChars(6)
+    .typeString("<strong style='color : #E30F0F'> JavaScript !</strong>")
+    .pauseFor(2000)
+    .deleteChars(12)
+    .typeString("<strong style='color : rgba(223,101,30,1)'> Angular !</strong>")
+    .pauseFor(2000)
+    .start();
 });
+
+//Anim Gsap + scroll magix
+
+const titre = document.querySelector('h1');
+const btn = document.querySelectorAll('.btn-acc');
+const btnMedias = document.querySelectorAll('.media');
+const btnRondAccueil = document.querySelectorAll('.btn-rond');
+
+
+const TL1 = gsap.timeline({paused: true});
+
+TL1
+.staggerFrom(btn, 1, {opacity: 0}, 0.2, '-=0.30')
+.staggerFrom(btnMedias, 1, {opacity: 0}, 0.2, '-=0.75')
+.from(btnRondAccueil,  {y: -50, opacity:0, ease: Power3.easeOut, duration:0.4}, '=-1s')
+window.addEventListener('load', () => {
+    TL1.play();
+})
+
+// animation scroll magic
+
+const presentationContaineur  = document.querySelector('.presentation');
+const titrePres = document.querySelector('.titre-pres');
+const presGauche = document.querySelector('.pres-gauche');
+
+const t1pres = new TimelineMax();
+t1pres 
+.from(titrePres, {y: -200, opacity: 0, duration: 0.6})
+.from(presGauche, {y:-20, opacity:0, duration:0.6}, '-=0.5')
+
+const controlleur = new ScrollMagic.Controller();
+const scene = new ScrollMagic.Scene({
+    triggerElement: presentationContaineur,
+    triggerHook: 0.4,
+    reverse: false
+})
+.setTween(t1pres)
+// .addIndicators()
+.addTo(controlleur)
 
    
