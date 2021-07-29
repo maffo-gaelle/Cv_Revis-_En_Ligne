@@ -498,6 +498,14 @@ h1 {
     background: transparent;
 }
 
+.btn-acc3:hover {
+    border: 1px solid #333;
+    color: #601508;
+    width: 300px;
+    font-weight: bold;
+    background: #f1f1f1;
+}
+
 /* media presentation */
 
 @media screen and (max-width: 1050px) {
@@ -637,7 +645,7 @@ h1 {
 
 .tools {
     font-size: 15px;
-    color: #E30F0F;
+    color: #601508;
 }
 .item hr {
     background-color: #601508;
@@ -651,10 +659,14 @@ h1 {
     background: transparent;
     border: 2px solid #601508;
     color: #601508;
-    padding: 15px;
+    padding: 13px;
     width: 200px;
     display: inline-block;
     margin-top: 10px;
+}
+.btn-acc4:hover {
+    background: #601508;
+    color: #f1f1f1;
 }
 
 @media screen and (max-width: 1300px) {

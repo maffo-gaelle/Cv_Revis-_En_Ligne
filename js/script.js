@@ -63,7 +63,7 @@ $(document).ready(function() {
 
     var ctx = document.getElementById('myChart');
     var data = {
-            labels: ['Java', 'Typescript', 'Css/CSS3', 'PHP', 'Angular', 'SQL Server', 'Javascript', 'JQuery', 'WPF', '.NET','ASP MVC', 'C#', 'HTML'],
+            labels: ['Java', 'Typescript', 'PHP', 'Angular', 'SQL Server', 'Css/CSS3','Javascript', 'JQuery', 'WPF', '.NET','ASP MVC', 'C#', 'HTML'],
             datasets: [{
                 label: '% de competence',
                 data: [40, 60, 65, 70, 75, 80, 85, 85, 87, 90, 90, 92, 95],
@@ -208,7 +208,7 @@ $(document).ready(function() {
     });
 
     typewriter
-    .pauseFor(1800)
+    .pauseFor(1000)
     .deleteChars(12)
     .typeString("<strong style='color : #601508!important'> Developer Full-stack !</strong>")
     .pauseFor(2000)
@@ -217,10 +217,10 @@ $(document).ready(function() {
     .pauseFor(2000)
     .deleteChars(6)
     .typeString("<strong style='color : #E30F0F'> JavaScript !</strong>")
-    .pauseFor(2000)
-    .deleteChars(12)
-    .typeString("<strong style='color : rgba(223,101,30,1)'> Angular !</strong>")
-    .pauseFor(2000)
+    // .pauseFor(2000)
+    // .deleteChars(12)
+    // .typeString("<strong style='color : rgba(223,101,30,1)'> Angular !</strong>")
+    .pauseFor(1000)
     .start();
 });
 
