@@ -32,7 +32,7 @@ section h2 {
 .red-divider {
     width: 120px;
     height: 5px;
-    background: #601508;
+    background: #656261;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -477,7 +477,7 @@ h1 {
 .pres-gauche p {
     text-align: center;
     line-height: 40px;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1.3px;
 }
 

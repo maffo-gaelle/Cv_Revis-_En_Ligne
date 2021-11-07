@@ -63,7 +63,7 @@ $(document).ready(function() {
 
     var ctx = document.getElementById('myChart');
     var data = {
-            labels: ['Java', 'Typescript', 'PHP', 'Angular', 'SQL Server', 'Css/CSS3','Javascript', 'JQuery', 'WPF', '.NET','ASP MVC', 'C#', 'HTML'],
+            labels: ['PHP','Java', 'WPF','Typescript',  'JQuery', 'Css/CSS3', 'Javascript',  'Angular', 'SQL Server', '.NET','ASP MVC', 'C#', 'HTML'],
             datasets: [{
                 label: '% de competence',
                 data: [40, 60, 65, 70, 75, 80, 85, 85, 87, 90, 90, 92, 95],
@@ -210,13 +210,16 @@ $(document).ready(function() {
     typewriter
     .pauseFor(1000)
     .deleteChars(12)
-    .typeString("<strong style='color : #601508!important'> Developer Full-stack !</strong>")
+    .typeString("<strong style='color : #601508!important'> Developer junior Full-stack !</strong>")
     .pauseFor(2000)
     .deleteChars(12)
-    .typeString("<strong style='color : #601508'> .NET !</strong>")
+    .typeString("<strong style='color : #08088A'> .NET !</strong>")
     .pauseFor(2000)
     .deleteChars(6)
-    .typeString("<strong style='color : #E30F0F'> JavaScript !</strong>")
+    .typeString("<strong style='color : #E30F0F'> Angular !</strong>")
+    .pauseFor(2000)
+    .deleteChars(9)
+    .typeString("<strong style='color : green'> JavaScript !</strong>")
     // .pauseFor(2000)
     // .deleteChars(12)
     // .typeString("<strong style='color : rgba(223,101,30,1)'> Angular !</strong>")

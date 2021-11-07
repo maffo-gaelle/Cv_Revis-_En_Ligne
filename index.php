@@ -91,8 +91,8 @@
                 </p>
                 <hr>
                 <p>
-                    Three years ago, i decide to change my professionnal guidance. Since, i developed excellent knowledges in several languages: <span>C#</span>, <span>.NET Frameworks</span>, <span>Angular</span>, <span>JavaScript</span>, <span>Sql</span>, <span>jQuery</span>, and so on. Now, I have good skills to join an ambitious development team and thus, put at its service my know-how. My goal is also to acquire new skills. I am an <span>ambitious</span>, <span>outgoing</span> and <span>determined</span> worker. I enjoy challenges and my assets are among others my <span>team work spirit </span> and my high determination to <span>achieve my goals</span>. I remain at your disposal for any question.
-                    <p><a href="Docs/cvE.pdf" target=_blank class="btn-acc btn-acc3">Download resume</a></p>
+                    Three years ago, i decided to change my professionnal guidance. I have since developed excellent knowledge in several programming languages including : <span>C#</span>, <span>.NET Core</span>, <span>ASP.NET MVC</span>, <span>ASP.NET Web API</span>, <span>Angular</span>, <span>JavaScript</span>, <span>Sql</span>. I have the appropriate skills to join and bring my expertise to an ambitious developer team. I also looking forward to acquiring new skills. I am an <span>ambitious</span> and <span>determined</span> worker.  I am a <span>reliable</span> and <span>flexible</span> team player with ability to balance multiple tasks and prioritize to meet established schedules and datelines. I remain at your disposal for any question.
+                    <p><a href="Docs/cvAurelieMaffo.pdf" target=_blank class="btn-acc btn-acc3">Download resume</a></p>
                 </p>
                 <br>
             </div>
@@ -114,7 +114,7 @@
                     <h3>Project similar to Trello</h3>
                     <p>Trello is an online projects management tool. It is based on an organization of projects in boards, lists and cards. Each card representing task. The cards are assignable to members of a team and are mobile from one list to another, thus reflecting the progress of project.<br><br>
                     <span class="technology">Technologies used: </span><span class="tools">FRONTEND: Angular, Angulalar material, Typescript, ... BACKEND: ASP .NET Core, EF Core, MySQL SQlite(tests), Linq, API REST</span></p>
-                    <a href="https://github.com/maffo-gaelle/Application_Gestion_Contacts" class="link btn-acc4" target="_blank">more on Github</a>
+                    <a href="https://github.com/maffo-gaelle/trello" class="link btn-acc4" target="_blank">more on Github</a>
                 </div>
             </div>
             <div class="item vague1">
@@ -138,7 +138,7 @@
                     <h3>Pizza App</h3>
                     <p>PizzApp computes the ingredients needed to obtain a dough with the selected features and suggests the amount of yeast to be used. It also lets you save your recipes, reload and share them<br><br>
                     <span class="technology">Technologies used: </span><span class="tools">.NET 5, Entity Framework Core, SQL Server, Architecture MVVM, API Rest, SQlite, Blazor</span></p>
-                    <a href="https://github.com/maffo-gaelle/Application_Gestion_Contacts" class="link btn-acc4">more on Github</a>
+                    <a href="https://github.com/maffo-gaelle/Pizza_Aurelie" target="_blank" class="link btn-acc4">more on Github</a>
                 </div>
             </div>
             <div class="item vague3">
@@ -150,7 +150,7 @@
                     <h3>Ma Coiffeuse Afro(in progress)</h3>
                     <p>Ma Coiffeuse Afro is a beauty and style social platform whose goal is to allow people who will be hairdressers at home and hairdressers to meet each other<br><br>
                     <span class="technology">Technologies used: </span><span class="tools">Backend: .NET 5, ADO .NET, SQL Server, API Rest, JWT authenticate, Session, ... Frontend: React, Javascript ... Analyse: use case diagram, Entity-Relationship diagram, Sequence diagram</span></p>
-                    <a href="https://github.com/maffo-gaelle/Application_Gestion_Contacts" class="link btn-acc4" target="_blank">more on Github</a>
+                    <a href="https://github.com/maffo-gaelle/AFROHairdressingServices" class="link btn-acc4" target="_blank">more on Github</a>
                 </div>
             </div>
             <div class="item vague3">
@@ -159,10 +159,10 @@
                         <img src="images/xaml1600.png" alt="Trello">
                     </p>
                     <hr>
-                    <h3>Project similar to Trello</h3>
+                    <h3>Project similar to Stack-overflow</h3>
                     <p>Stack Overflow is a knowledge-sharing website,where developers discuss through questions and answers on a wide variety of computer programming.<br><br>
                     <span class="technology">Technologies used: </span><span class="tools">C#, EF, LINQ, WPF, XAML, architecture MVVM </span></p><br>
-                    <a href="https://github.com/maffo-gaelle/Application_Gestion_Contacts" class="link btn-acc4" target="_blank">more on Github</a>
+                    <a href="https://github.com/maffo-gaelle/stack-overflow" class="link btn-acc4" target="_blank">more on Github</a>
                 </div>
             </div>
             <div class="item vague2">
@@ -171,10 +171,10 @@
                         <img src="images/php3.jpg" alt="Trello">
                     </p>
                     <hr>
-                    <h3>Project similar to Trello</h3>
+                    <h3>Project similar to Stack-overflow</h3>
                     <p>Stack Overflow is a knowledge-sharing website,where developers discuss through questions and answers on a wide variety of computer programming.<br><br>
                     <span class="technology">Technologies used: </span><span class="tools">PHP, Javascrit, Jquery, Ajax requests, HTML, CSS, Bootstrap, MySQL, MVC architecture; </span></p>
-                    <a href="https://github.com/maffo-gaelle/Application_Gestion_Contacts" class="link btn-acc4" target="_blank">more on Github</a>
+                    <a href="https://github.com/maffo-gaelle/stuck-overflow" class="link btn-acc4" target="_blank">more on Github</a>
                 </div>
             </div>
            

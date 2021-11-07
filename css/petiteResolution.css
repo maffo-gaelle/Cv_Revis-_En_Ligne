@@ -4,24 +4,6 @@ h1 {
     line-height: 56px;
 }
 
-/* About */
-
-/* #more-infos {
-    clip-path: polygon(0 1%, 100% 20%, 100% 100%, 0 81%);
-}
-#more-infos div {
-    margin-top: 50%;
-    margin-right: 2px;
-}
-
-#more-infos div h1 {
-    text-align: left;
-}
-
-#more-infos div .pulse {
-    margin-left: 50%;
-} */
-
 /* barre de navigation */
 
  .show-nav .bar {
@@ -132,122 +114,7 @@ h1 {
     display: none;
 } 
 
-/*  
 
-span#maffo{
-    display: none;
-}
- 
-
-/* about 
-#about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#about-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-}
-
-.wrapper {
-    display: none;
-}
-
-.profile-picture {
-    padding: 20px;
-    width: auto;
-}
-
-.profile-picture img {
-    text-align: center;
-}
-.profile-picture div{
-    text-align: center;
-    line-height: 20px;
-}
-
-.profile-picture div:last-child {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-#small-button {
-    padding: 13px;
-    display: block;
-    background: transparent;
-    border: 1px solid #a05127;
-    color: rgba(223,101,30,1);
-    transition: scale(1) 550ms ease-in-out;
-} 
-
-#small-button:hover {
-    padding: 13px;
-    display: block;
-    background: rgba(223,101,30,1);;
-    border: 2px solid #a05127;
-    color: #fff;
-    scale: 2;
-} 
-
-.timeline {
-    display: none;
-}
-
-/* competences 
-
-.chart-container {
-    width: 70vw;
-    left: 0;
-    min-width: 200px;
-    min-width: 0;
-    margin: auto;
-}
-
-#AllSkills {
-    display: none;
-}
-
-/* Projets 
-.projetMin {
-    display: block;
-    width: auto;
-    padding-left: 5px;
-}
-
-.projetMin li{
-    border: 2px solid #D68B46;
-    border-radius: 8px;
-    width: 80%;
-    margin: 15px auto;
-    padding: 10px;
-    background: rgb(147,73,20);
-    background: linear-gradient(135deg, rgba(147,73,20,1) 0%, rgba(242,97,13,1) 0%, rgba(221,152,112,1) 31%, rgba(218,87,14,1) 56%, rgba(243,210,194,1) 84%, rgba(216,87,25,1) 90%, rgba(251,247,247,1) 98%);
-    color: #fff;
-    font-family: 'Itim', cursive;
-}
-
-.projetMin li a.link{
-    color: #000;
-    transition: all 550ms ease-in-out;
-    transform: scale(1);
-}
-
-.projetMin li a.link:hover{
-    font-size: 16px;
-    transform: scale(1.10);
-}
-
-#education-blocks {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    flex-direction: column;
-    
-}*/
 
 /* Formulaire de contact */
 

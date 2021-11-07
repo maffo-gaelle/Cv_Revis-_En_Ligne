@@ -1,7 +1,7 @@
 <?php
 
     $array = array("firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "", "isSuccess" => false);
-    $emailTo = "gaellemaffo@yahoo.fr";
+    $emailTo = "contact@gaellemaffo.net";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
     { 
